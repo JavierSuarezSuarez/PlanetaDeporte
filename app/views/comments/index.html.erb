@@ -1,0 +1,21 @@
+<h1 >Comentarios</h1>
+<table>
+  <tr>
+    <th>Autor</th>
+    <th>Comentario</th>
+    <th>Noticia</th>
+    <th>Acciones</th>
+  </tr>
+
+  <tbody>
+  <% @comments.each do |i| %>
+    <tr>
+      <td><%= i.user.nombre %></td>
+      <td><%= i.texto %></td>
+      <td><%= i.article.titulo %></td>
+      <td><%= link_to 'Ir a la noticia del comentario', i.article %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>

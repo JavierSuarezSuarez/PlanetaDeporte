@@ -1,0 +1,19 @@
+<% if !logged_in? %>
+
+  <%= link_to image_tag("logo.png", :alt=>"logo", :class=>"Logo"), root_path %>
+  <%= link_to "Fútbol", '/client/sport_section.html?seccion=futbol'%>
+  <%= link_to "Baloncesto", '/client/sport_section.html?seccion=baloncesto' %>
+  <%= link_to "Tenis", '/client/sport_section.html?seccion=tenis' %>
+  <%= link_to "Motor", '/client/sport_section.html?seccion=motor' %>
+  <%= link_to "eSport", '/client/sport_section.html?seccion=esports' %>
+  <%= link_to "Iniciar Sesion", login_path %>
+  <%= link_to "Registrarse", new_user_path %>
+<% else %>
+  <%= link_to image_tag("logo.png", :alt=>"logo", :class=>"Logo"), '/client/home_registered.html'%>
+  <%= link_to "Fútbol", '/client/sport_section_registered.html?seccion=futbol'%>
+  <%= link_to "Baloncesto", '/client/sport_section_registered.html?seccion=baloncesto' %>
+  <%= link_to "Tenis", '/client/sport_section_registered.html?seccion=tenis' %>
+  <%= link_to "Motor", '/client/sport_section_registered.html?seccion=motor' %>
+  <%= link_to "eSport", '/client/sport_section_registered.html?seccion=esports' %>
+  <%= link_to "Cerrar Sesion", logout_path, method: :delete %>
+<% end %>

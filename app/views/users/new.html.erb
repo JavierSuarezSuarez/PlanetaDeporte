@@ -1,0 +1,37 @@
+
+<% if logged_in? && current_user.tipo == "1" %>
+    <h1>Crear Usuario</h1>
+
+<% else %>
+
+  <h1>Registrarse</h1>
+<% end %>
+
+
+<%= form_with model: @user, local: true do |f| %>
+  <%= f.label :nombre %><br>
+  <%= f.text_field :nombre %><br><br>
+
+  <%= f.label :apellidos %><br>
+  <%= f.text_field :apellidos %><br><br>
+
+  <%= f.label :email %><br>
+  <%= f.text_field :email %><br><br>
+
+  <%= f.label :password %><br>
+  <%= f.password_field :password %><br><br>
+
+
+  <% if logged_in? && current_user.tipo == "1" %>
+    <%= f.label :tipo %><br>
+    <%= f.text_field :tipo %><br><br>
+    <%= f.submit "Crear usuario" %>
+  <% else %>
+
+    <%= f.hidden_field :tipo, :value => "3" %>
+    <%= f.submit "Registrarse" %>
+
+  <% end %>
+
+
+<% end %>

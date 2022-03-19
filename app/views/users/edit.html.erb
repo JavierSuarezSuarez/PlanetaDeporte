@@ -1,0 +1,17 @@
+<h1>Editar mis datos</h1>
+
+<%= form_with model: @user, local: true do |f| %>
+  <%= f.label :nombre %><br>
+  <%= f.text_field :nombre, autofocus: true %><br>
+
+  <%= f.label :apellidos %><br>
+  <%= f.text_field :apellidos%><br>
+
+  <%= f.label :email %><br>
+  <%= f.text_field :email%><br>
+
+  <%= f.label :password %><br>
+  <%= f.password_field :password %><br>
+
+  <%= f.submit "Confirm Changes" %>
+<% end %>

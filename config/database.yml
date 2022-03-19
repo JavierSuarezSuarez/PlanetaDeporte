@@ -1,0 +1,38 @@
+# PG. Versions 3.8.0 and up are supported.
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: 'pduser'
+  password: '12345678'
+  host: localhost
+
+development:
+  <<: *default
+  database: planetadeporte_development
+  username: 'pduser'
+  password: '12345678'
+  host: localhost
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: planetadeporte_test
+  username: 'pduser'
+  password: '12345678'
+  host: localhost
+
+production:
+  <<: *default
+  database: planetadeporte_production
+  username: 'pduser'
+  password: '12345678'
+  host: localhost

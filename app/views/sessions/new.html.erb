@@ -1,0 +1,21 @@
+
+<% if logged_in?%>
+
+  <h1>¿Deseas Cerrar Sesión?</h1><br>
+  <%= link_to "Cerrar Sesion", logout_path, method: :delete %>
+
+
+<% else %>
+  <h1>Iniciar Sesión</h1>
+
+  <%= form_with url: '/login', local: true do |f| %>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre, autofocus: true %><br>
+
+    <%= f.label :password %><br>
+    <%= f.password_field :password %><br>
+
+    <%= f.submit "Login" %>
+  <% end %>
+
+<% end %>

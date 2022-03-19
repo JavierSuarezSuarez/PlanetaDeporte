@@ -1,0 +1,15 @@
+<p>
+  <strong>Autor:</strong>
+  <%= comment.user.nombre%>
+</p>
+<p>
+  <strong>Comentario:</strong>
+  <%= comment.texto %>
+</p>
+
+<p>
+  <%= link_to 'Eliminar Comentario',
+              [comment.article, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</p>

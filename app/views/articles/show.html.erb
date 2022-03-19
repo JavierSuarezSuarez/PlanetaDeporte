@@ -1,0 +1,42 @@
+
+<h1> Artículo: <%= @article.titulo %></h1>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @article.foto %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @article.fecha %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @article.titulo %>
+</p>
+
+<p>
+  <strong>Subtitulo:</strong>
+  <%= @article.subtitulo %>
+</p>
+
+<p>
+  <strong>Seccion:</strong>
+  <%= @article.seccion %>
+</p>
+
+<p>
+  <strong>Cuerpo:</strong>
+  <%= @article.cuerpo %>
+</p>
+
+
+<h2>Comentarios</h2>
+<%= render @article.comments %>
+
+<h2> Añadir comentario</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_article_path(@article) %>
+<%= link_to 'Back', articles_path%>

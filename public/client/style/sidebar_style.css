@@ -1,0 +1,141 @@
+ /*General: Sidebar y Contenido (Etiqueta div clase container)*/
+ .contain{
+    max-width: none;
+    padding: 0%;
+    position: relative;
+}
+/*Sidebar y Contenido (Etiqueta div clase row)*/
+.contain_row{
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+    width: 100%;
+}
+.content_form{
+    height: 73vh;
+}
+/*Etiqueta ul*/
+.nav_list {
+    list-style-type: none;
+    padding: 2%;
+}
+/*Etiqueta li*/
+.nav_items {
+    padding: 10%;
+}
+/*Imagen Icono (Etiqueta img)*/
+.sidebar_logos {
+    display: block;
+    margin: auto;
+}
+/*Links (Etiqueta a)*/
+.sidebar_links {
+    text-decoration: none;
+    color: #0F56B3;
+    text-align: center;
+    display: block;
+    margin-top: 10%;
+    font-family: cursive;
+}
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+@media only screen and (min-width:992px) {
+
+    /*Menu Lateral General*/
+    .sidebar, .sidebar_admin {
+        display: block;
+        float: left;
+        margin-left: -0.5%;
+        background: #C2E2FA;
+        padding: 0% 2%;
+        width: 10%;
+    }
+    /*Sidebar zona administración*/
+    .sidebar_admin{
+        height: auto;
+        width: 15%;
+    }
+}
+/*Media Query para Movil*/
+@media only screen and (max-width: 767px) {
+    /*Ocultar Menu Lateral versión PC*/
+    .sidebar, .sidebar_admin{
+        display: none;
+    }
+    /*div*/
+    .mobile_sidebar.show {
+        display: block;
+        padding: 10% 60%;
+        column-count: 2;
+        background: #6f6f6f;
+    }
+    /*Div de cada uno*/
+    .mobile_sidebar_list {
+        display: inline-flex;
+        column-count: 2;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    /*Imagen del icono*/
+    .img_icon{
+        margin-right: 5%;
+    }
+    /*Imagen del icono usuarios blanco*/
+    .img_user{
+        width: 80%;
+    }
+    /*Imagen del icono panel blanco*/
+    .img_panel{
+        width: 70%;
+    }
+    /*Etiqueta a (Texto de los botónes)*/
+    .sidebar_link{
+        text-align: center;
+        color: white;
+    } 
+    .content_form{
+        height: auto;
+    }
+}
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*Ocultar Menu Lateral versión PC*/
+    .sidebar,.sidebar_admin{
+        display: none;
+    }
+    /*div*/
+    .mobile_sidebar.show {
+        display: block;
+        padding: 10% 60%;
+        column-count: 2;
+        background: #6f6f6f;
+    }
+    /*Div de cada uno*/
+    .mobile_sidebar_list {
+        display: inline-flex;
+        column-count: 2;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        padding: 0% 10%;
+    }
+    /*Imagen del icono*/
+    .img_icon{
+        margin-right: 5%;
+    }
+    .img_panel{
+        width: 70%;
+    }
+    .sidebar_link{
+        text-align: center;
+        color: white;
+    }
+    .content_form{
+        height: auto;
+    }
+}
+
+
+
+

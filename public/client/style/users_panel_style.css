@@ -1,0 +1,152 @@
+
+
+.edit_remove_btns_V2 {
+    text-align: center;
+}
+
+
+td, th {
+    text-align: center;
+}
+
+.hash_td {
+    white-space:pre-line; 
+    word-break: break-all;
+}
+
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+/*Media Query para PC */
+@media only screen and (min-width:992px) {
+
+    .users_wrap_section{
+        width: 85.5%;
+        padding: 0%;
+    }
+    
+    .users_table {
+        margin-left: 8%;
+        margin-top: 1%;
+        border-collapse: separate;
+        border-spacing: 25px 30px;
+        margin-right: 9%;
+    }
+
+
+    .users_table_profile_img {
+        width: 91%;
+        border-radius: 619%;
+        margin-top: 0%;
+        margin-left: 9%;
+        float: left;
+    }
+
+    .button_edit_V2 {
+        padding: 10%;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: #066397;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .button_delete_V2 {
+        padding: 10%;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: red;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .edit_delete_V2 {
+        margin-bottom: 20%;
+    }
+}
+
+
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .users_table {
+        margin-left: 8%;
+        margin-top: 1%;
+        border-collapse: separate;
+        border-spacing: 25px 30px;
+        margin-right: 9%;
+    }
+
+    .users_table_profile_img {
+        width: 100%;
+        border-radius: 619%;
+        margin-top: 0%;
+        margin-left: 7%;
+        float: left;
+    }
+
+    .button_edit_V2 {
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: #066397;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .button_delete_V2 {
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: red;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .edit_delete_V2 {
+        margin-bottom: 20%;
+    }
+}
+
+
+/*Media Query para Movil*/
+@media only screen and (max-width: 767px) {
+
+    .users_table {
+        margin-left: 5%;
+        margin-top: 1%;
+        border-collapse: separate;
+        border-spacing: 5px 30px;
+        margin-right: 9%;
+    }
+
+    .users_table_profile_img {
+        width: 97%;
+        border-radius: 619%;
+        margin-top: 0%;
+        margin-left: 7%;
+        float: left;
+    }
+
+    .button_edit_V2 {
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: #066397;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .button_delete_V2 {
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: red;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .edit_delete_V2 {
+        margin-bottom: 20%;
+    }
+
+}

@@ -1,0 +1,164 @@
+
+
+.comments_table {
+    margin-left: 8%;
+    margin-top: 1%;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+}
+
+
+.edit_table_links, .remove_table_links, .answer_table_links {
+    text-decoration: none;
+}
+
+.edit_table_links {
+    color: #00D1FF;
+}
+
+.remove_table_links {
+    color: #FF0000;
+}
+
+.answer_table_links {
+    color: #030303;
+}
+
+
+.author_th, .comment_th, .news_th, .actions.th, td {
+    text-align: center;
+}
+
+
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+/*Media Query para PC */
+@media only screen and (min-width:992px) {
+    .comments_table_profile_img {
+        width: 44%;
+        border-radius: 619%;
+        margin-top: -2%;
+        margin-left: -13%;
+        float: left;
+    }
+
+    .comments_wrap_section{
+        width: 85.5%;
+        padding: 0%;
+    }
+
+    .author_name {
+        margin-left: 40%;
+        font-size: small;
+     }
+
+    .comment_txt, .comment_new_txt {
+        font-size: small;
+
+    }
+
+    .actions_td {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: start;
+        font-size: small;
+    }
+
+    .actions_td_writer {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: start;
+        margin-top: 15%;
+        font-size: small;
+    }
+
+}
+
+
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .comments_table_profile_img {
+        width: 38%;
+        border-radius: 619%;
+        margin-top: -9%;
+        margin-left: -12%;
+        float: left;
+    }
+
+    .comment_txt, .comment_new_txt {
+        font-size: x-small;
+    }
+
+    .author_name {
+        margin-left: 40%;
+        font-size: x-small;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 97%;
+    }
+
+    .actions_td {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: start;
+        font-size: x-small;
+    }
+
+    .actions_td_writer {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: start;
+        margin-top: 15%;
+        font-size: x-small;
+    }
+}
+
+
+/*Media Query para Movil*/
+@media only screen and (max-width: 767px) {
+
+    .comments_table {
+        margin-left: 8%;
+        margin-top: 1%;
+        border-collapse: separate;
+        border-spacing: 10px 5px;
+    }
+    
+    .comments_table_profile_img {
+        width: 38%;
+        border-radius: 619%;
+        margin-top: -9%;
+        margin-left: -12%;
+        float: left;
+    }
+
+    .comment_txt, .comment_new_txt {
+        font-size: xx-small;
+    }
+
+    .author_name {
+        margin-left: 40%;
+        font-size: xx-small;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 97%;
+    }
+
+    .actions_td {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: start;
+        font-size: xx-small;
+    }
+
+    .actions_td_writer {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: start;
+        margin-top: 15%;
+        font-size: xx-small;
+    }
+}

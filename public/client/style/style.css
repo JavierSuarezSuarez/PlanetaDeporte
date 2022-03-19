@@ -1,0 +1,355 @@
+/*-------------------------Contact-----------------------*/
+/*Cuerpo del contacto*/
+.body_contact {
+    text-align: center;
+    font-size: large;
+    width:85%;
+    padding-bottom: 10%;
+}
+/*Etiqueta div con el contenido (Texto y redes sociales)*/
+.social {
+  width: 80%;
+  margin: auto;
+  text-align: start;
+}
+/*Cada red social (Etiqueta li)*/
+.social_contact{
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0%;
+}
+/*##############Form_contact###################*/
+/*Formulario de contacto (contact) y de registrarse(sign_up)*/
+.contact, #sign_up{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 3%;
+  padding-top: 0.3%;
+}
+/*Etiqueta label del formulario*/
+.text_form {
+  width: 100%;
+  text-align: start;
+  padding: 0%;
+}
+/*Etiqueta input y text_area del formulario contacto y input (de registrarse y de perfil)*/
+.input_contact, .textarea_contact, .input_text, .input_contact_sign{
+  width: 100%;
+  float: left;
+  background: #DEF1FF;
+  padding: 0.5% 2%;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(58, 58, 68, 0.2), 0px 4px 8px rgba(90, 91, 106, 0.2);
+}
+/*Etiqueta input del formulario contacto*/
+.input_contact, .input_contact_sign{
+  width: 50%;
+}
+.button_send {
+  margin-top: 1%;
+  float: right;
+  width: 135px;
+  border-radius: 10px;
+  border: none;
+  background-color: #008CF2;
+  color: #FFFFFF;
+  font-size: medium;
+  text-transform: uppercase;
+  padding: 0.5% 0% 0.5% 2%;
+}
+.send_img{
+  float: left;
+  margin-left: 3%;
+  width: 25px;
+}
+/*-------------------------Profile-----------------------*/
+/*Cuerpo del profile y de registrarse*/
+.section_profile {
+  padding-top: 1%;
+  margin: 0%;
+}
+/*Etiqueta div con foto de perfil y botón del cambiar foto*/
+.photo_profile {
+  text-align: center;
+  padding: 0%;
+  width: 30%;
+}
+/*Foto de perfil en perfil y Foto por defecto en registrarse*/
+.profile_img, .change_photo {
+  width: 85%;
+  border-radius: 50%;
+
+}
+.change_photo {
+  border-radius: 0%;
+}
+/*Botón de cambiar y añadir foto de perfil*/
+.btn_change_img, .btn_add_img {
+  margin-top: 1%;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  background-color: #066397;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 0.9% 0.7% 0.8% 2%;
+  font-size: 15px;
+}
+/*Imagen cambiar foto*/
+.change_img {
+  width: 12%;
+  margin-right: 4%;
+}
+/*##############Form_Profile###################*/
+/*Formulario de Perfil*/
+#edit_profile {
+  text-align: center;
+  width: 70%;
+  padding-bottom: 3%;
+  padding-top: 0.3%;
+  float: right;
+}
+
+/*Etiqueta label(nombre del input)*/
+.label_title{
+  font-size: medium;
+  color:#4F91FF;
+  float: left;
+  font-family: cursive;
+  padding: 0%;
+  display: inline-grid;
+  text-align: start;
+}
+/*Input de perfil y de registrarse*/
+.input_text {
+  padding: 5px 10px;
+}
+/*Botón editar y guardar de perfil*/
+.button_edit, .button_ok{
+  width: 3%;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+/*Botón editar de perfil*/
+.button_edit {
+  margin-left: 4%;
+  padding: 5px 14px;
+  background-color: #066397;
+  display: grid;
+  justify-content: center;
+}
+/*Botón guardar de perfil*/
+.button_ok{
+  padding: 0.5%;
+  background-color: #fff;
+}
+/*Imagen de guardar*/
+.button_ok img{
+  width: 130%;
+}
+/*Imagen de editar*/
+.edit_delete {
+  padding: 0%;
+  margin: 0%;
+  margin-top: 20%;
+}
+
+/*---------------------------Sign_Up----------------------------*/ 
+.create_user_img{
+  width: 85%;
+}
+.div_button{
+  float: right;
+  display: inline-flex;
+
+}
+/*Formulario de registrarse*/
+#sign_up{
+  margin: 0%;
+  padding: 0%;
+  padding-left: 3%;
+}
+#button_signup{
+  text-align: center;
+  width: 180px;
+  border-radius: 10px;
+  border: none;
+  background-color: #008CF2;
+  color: #FFFFFF;
+  font-size: medium;
+  text-transform: uppercase;
+  padding: 5px 7px;
+}
+.sign_img{
+  float: left;
+  margin-left: 3%;
+  width: 12.5%;
+  margin-bottom: 0.5%;
+}
+/*--------------------------Login-----------------------*/
+/*Cuerpo de la página login*/
+#section_login {
+  margin: 3% 0%;
+}
+/*##############Form_Login###################*/
+/*Cuadro formulario de login*/
+#login  {
+  width: 40%;
+  margin: 0% auto;
+  background: #DEF1FF;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+/*div del logo en el formulario login*/
+#logo_login, #logo_login a{
+  text-align: center;
+  width: 100%;
+}
+/*Imagen del logo en el formulario login*/
+#logo {
+  width: 70%;
+}
+/*Etiqueta label del formulario login*/
+.label_login {
+  color: #007BAD;
+  font-family: cursive;
+}
+/*Etiqueta input usuario del formulario login*/
+.input_login {
+  border: 2px solid #007BAD;
+  margin: 1% 0%;
+  background-color: #DEF1FF;
+  padding: 2% 5%;
+}
+/*Etiqueta input password del formulario login*/
+#password_login{
+  margin-top: 1%;
+}
+/*Etiqueta a de registrarse en login*/
+#sign_new{
+  text-decoration:none;
+  color: #007BAD;
+}
+/*botón de iniciar sesión en login*/
+.button_login {
+  margin: 5% auto;
+  margin-bottom: 2%;
+  display: block;
+  width: 84%;
+  border-radius: 3px;
+  border: none;
+  background-color: #4267B2;
+  color: #DEF1FF;
+  padding: 5px;
+}
+.content_form_4 {
+  height: 70vh;
+}
+.content_form_5 {
+  height: 72vh;
+}
+/*#########################################MEDIA QUERIES#####################################*/
+/*######################Media Query versión PC###################*/
+@media only screen and (min-width:992px) {
+  /*Etiqueta label de registrarse (label_sign), Etiquetas label de usuario y password (label_login), botón de iniciar sesión en login*/
+  #label_sign, .label_login, .button_login{
+    font-size: large;
+  }
+  /*Formulario de contacto (contact)*/
+  .contact{
+    width: 70%;
+  }
+  /*Etiqueta label del formulario contacto*/
+  .text_form {
+    width: 30%;
+    text-align: end;
+  }
+  /*Etiqueta input y text_area del formulario contacto*/
+  .input_contact, .textarea_contact{
+    margin-left: 1%;
+  }
+  /*Etiqueta input y text_area del formulario contacto*/
+  .textarea_contact, .input_text{
+    width: 65%;
+  }
+  .btn_change_img{
+    width:65%;
+  }
+}
+/*######################Media Query versión Tablet###################*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+  /*Etiqueta label de registrarse (label_sign), Etiquetas label de usuario y password (label_login), botón de iniciar sesión en login*/
+  #label_sign, .label_login, .button_login{
+    font-size: medium;
+  }
+  /*Fila contenido*/
+  .contain_row{
+    margin-top:2%;
+  }
+  /*Input de perfil*/
+  .input_text {
+    padding: 5px;
+    width: 85%;
+  }
+  /*Botón de cambiar y añadir imagen*/
+  .btn_change_img, .btn_add_img {
+    width: auto;
+    padding: 2% 10%;
+    display: inline-flex;
+    align-items: center;
+  }
+
+}
+/*######################Media Query versión móvil###################*/
+@media only screen and (min-width:576px) and (max-width:767px) {
+  /*Etiqueta label de registrarse (label_sign), Etiquetas label de usuario y password (label_login), botón de iniciar sesión en login*/
+  #label_sign, .label_login, .button_login{
+    font-size: small;
+  }
+  /*Etiqueta div con foto de perfil y botón del cambiar foto*/
+  .photo_profile {
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
+  /*Formulario de registrarse*/
+  #sign_up {
+    margin: 0 auto;
+  }
+  /*Fila contenido*/
+  .contain_row{
+    display: block;
+    margin-top:2%;
+  }
+  /*Botón de cambiar y añadir imagen*/
+  .btn_change_img, .btn_add_img {
+    width: auto;
+    padding: 2% 10%;
+    display: inline-flex;
+    align-items: center;
+  }
+  /*Input de perfil*/
+  .input_text {
+    padding: 5px;
+    width: 70%;
+  }
+  #edit_profile {
+    margin: 0 auto;
+    float: none;
+  }
+  .contact {
+    padding-bottom: 10%;
+  }
+  .content_form_5 {
+    height: 72vh;
+  }
+}

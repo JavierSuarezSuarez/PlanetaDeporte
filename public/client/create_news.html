@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+                <link rel="stylesheet" type="text/css" href="style/header_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/create_news_style.css" media="screen">
+                <link rel="stylesheet" type="text/css" href="style/style.css" media="screen">
+                <script src="scripts/jquery-3.6.0.min.js"></script>
+                <script src="scripts/form_validation.js"></script>
+                <script src="scripts/create_news_script.js"></script>
+                <script src="scripts/script.js"></script>
+                <title>Crear Noticia: Administrador </title> 
+        </head>
+
+        <body>
+                <header class="headers">
+                        <nav class="nav_header navbar navbar-expand-lg container-fluid"> 
+                            <!---  Mobile -->                       
+                            <button type="button" class="navbar-toggler navbar-burguer-btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon navbar-img"></span>
+                            </button>
+
+                            <div class="logo_user">
+                                <a class=" logo_link navbar-brand" href="home_registered.html">
+                                    <img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+                                </a>
+                                <a href="profile.html" ><img class="header_profile_img_V2" title="Profile" alt="Profile" src="img/profile.png"></a>
+                            </div>
+        
+                            <!-- PC -->
+                            <div class="link_normal navbar-nav">
+                                <a class="logo_link navbar-brand" href="home_registered.html"><img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png"></a>
+                                <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=futbol">Futbol</a>            
+                                <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=baloncesto">Baloncesto</a>
+                                <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=tenis">Tenis</a>
+                                <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=ciclismo">Ciclismo</a>
+                                <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=motor">Motor</a>
+                                <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=esports">eSports</a>
+                                <a class="search_link nav-link nav-item" href="filtered_news_registered.html"><img class="img_search" title="glass" alt="glass" src="img/search.png"></a>
+                                <a class="header_links nav-link nav-item" href="contact_registered.html">Contacto</a>
+                            </div>
+
+                            <div class="div_user ms-auto">
+                                <a class="header_profile_text btn btn-sm" href="profile.html">Pepe Moreno P&eacute;rez</a>
+                                <a class="profile_link" href="profile.html"><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
+                            </div>
+                        </nav>
+
+                        <!---  Mobile --> 
+                        <nav class="link_mobile navbar-nav navbar-collapse collapse" id="navbarCollapse">
+                          <div class="search"></div>
+                        </nav>
+                </header>
+
+                <!------------------------------------------------------------Sidebars and Breadcrumbs---------------------------------------------------------------------->
+                <!--Tablet & Mobile-->
+                <header class="mobile_bread breadcrumbs_nav">
+                    <h2 class="sub_headers_title">Crear Noticia</h2>
+                    <!-- Dropdown Menu -->
+                    <div class="div_dropdown dropdown">
+                        <button class="btn_menu btn dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                        Menú
+                        </button>
+                        <!--Dropdown Menu Contents-->
+                        <div class="mobile_sidebar dropdown-menu">
+
+                            <div class="mobile_sidebar_list "><img class="img_icon" title="Home" alt="Home" src="img/home_mobile.png">
+                                <a class="sidebar_link dropdown-item" href="home_registered.html">Home</a>
+                            </div>
+
+                            <div class="mobile_sidebar_list"><img class="img_icon" title="Users" alt="Users" src="img/users_mobile.png">
+                                <a class="sidebar_link dropdown-item" href="admin_users_panel.html">Usuarios</a>
+                            </div> 
+                            
+                            <div class="mobile_sidebar_list"><img class="img_icon" title="Content" alt="Content" src="img/content_mobile.png">
+                                <a class="sidebar_link dropdown-item" href="admin_content_panel.html">Contenido</a>
+                            </div>     
+    
+                            <div class="mobile_sidebar_list"><img class="img_icon" title="Comments" alt="Comments" src="img/coment_mobile.png">
+                                <a class="sidebar_link dropdown-item" href="admin_comments_panel.html">Comentarios</a>
+                            </div>    
+                        </div>
+                    </div>
+                </header>
+
+                
+                <!--PC-->
+                <!--Sidebar-->
+                <section>
+                    <div class="contain container">
+                        <div class="contain_row row">
+                            <nav class="sidebar col-sm-2" id="side">
+                                <ul class="nav_list">
+                                        <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
+                                            <a class="sidebar_links" href="home_registered.html">Home</a>
+                                        </li>
+
+                                        <li class="nav_items"><img class="sidebar_logos" title="Users" alt="Users" src="img/users.png">
+                                            <a class="sidebar_links" href="admin_users_panel.html"> Usuarios</a>
+                                        </li>
+
+                                        <li class="nav_items"><img class="sidebar_logos" title="Content" alt="Content" src="img/content.png">
+                                            <a class="sidebar_links" href="admin_content_panel.html"> Contenido</a>
+                                        </li>
+                    
+                                        <li class="nav_items"><img class="sidebar_logos" title="Comments" alt="Comments" src="img/comment.png">
+                                            <a class="sidebar_links" href="admin_comments_panel.html"> Comentarios</a>
+                                        </li>
+                                </ul>
+                            </nav>
+                            
+                            <section class="create_news_wrap_section cuerpo content_form_3 col-sm-10">
+                                <!--Admin-Writer panels breadcrumbs-->
+                                <header class="sub_headers">
+                                        <h2 class="sub_headers_title"> Crear Noticia </h2>
+                                </header>
+                            
+                                <!-----------------------------------------------------------Admin Create News Form---------------------------------------------------------------------------------->
+                                <section class="section_class_mobile">
+                                        <form class="create_new_form" method="POST">
+                                                
+                                                <table class="create_new_form_table">
+                                                        <tr class="row_form">
+                                                            <td class="cell_label"><label>Autor:&nbsp;</label></td>
+                                                            <td><input id="input_author" type="text" required pattern="[A-Za-z&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ntilde;&Ntilde;\s]{1,}" value="Name"/></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="cell_date"><label>Fecha:&nbsp;</label></td>
+                                                            <td class="cell_date"><input id="input_date" type="date" required placeholder="Pe: DD/mm/YYYY"/></td>
+                                                        </tr>
+
+                                                    <tr class="row_form">
+                                                            <td class="cell_label"><label>T&iacute;tulo:&nbsp;</label></td>
+                                                            <td class="cell_input"><input id="input_title" class="input_text_news_form" type="text" required size="60" placeholder="T&iacute;tulo de la Noticia"/></td>
+                                                        </tr>
+
+                                                        <tr class="row_form">
+                                                            <td class="cell_label"><label>Subt&iacute;tulo:&nbsp;</label></td>
+                                                            <td class="cell_input"><input id="input_subtitle" class="input_text_news_form" type="text" required size="90" placeholder="Subt&iacute;tulo de la Noticia"/></td>
+                                                        </tr>
+
+                                                    
+                                                    
+                                                        <tr>
+                                                                <td><label>Secci&oacute;n:&nbsp;</label></td>
+                                                                <td><select class="sections_select" >
+                                                                            <option value="Futbol">F&uacute;tbol</option>
+                                                                            <option value="Baloncesto">Baloncesto</option>
+                                                                            <option value="Tenis">Tenis</option>
+                                                                            <option value="Ciclismo">Ciclismo</option>
+                                                                            <option value="Motor">Motor</option>
+                                                                            <option value="eSports">eSports</option>
+                                                                    </select>
+                                                                </td>
+                                                        </tr>
+                                                </table>
+
+                                                <table class="menu_bar">
+                                                    <tr>
+                                                            <td class="cell_button"><button class="button_bold" type="button">N</button></td>
+                                                            <td class="cell_button"><button class="button_underline" type="button">S</button></td>
+                                                            <td class="cell_button"><button class="button_cursive" type="button">K</button></td>
+                                                            <td class="cell_size"><input class="button_size" type="number" min="8" max="32" placeholder="12"/></td>
+                                                            <td class="cell_img">
+                                                                <label>
+                                                                    <img class ="image" alt="image" src="img/image.png">
+                                                                    <input type="file" name="myfile" accept="image/*" style="display:none">
+                                                                    
+                                                                </label>
+                                                            </td>
+                                                            <input type="text" class="filename" style="display:none"/>
+                                                    </tr>
+                                                </table>
+
+                                                <textarea id="input_text_area_PC" type="text" required rows="10px" cols="80px" > Cuerpo de la noticia...</textarea>
+                                                <textarea id="input_text_area_Mobile" type="text" required rows="8px" cols="80px" > Cuerpo de la noticia...</textarea>
+                                                <textarea id="input_text_area_Tablet" type="text" required rows="10px" cols="80px" > Cuerpo de la noticia...</textarea>
+
+                                                <div class="buttons_div">
+                                                    <button id="submit_btn" class="button_publish"  onclick="check_create_news_form()" type="submit"> <img class ="publish_img" src="img/post.png" alt="publish"/>Publicar</button>
+                                                    <button class="button_delete" type="reset"> <img class ="delete_img" src="img/delete.png" alt="delete"/>Borrar</button>
+                                                </div>
+                                        </form>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </section>    
+
+                <footer class="footers">
+                    <div class="content container">
+                        <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;n Deportiva, S.L.U. Todos los derechos reservados.</pre>
+                        <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Contacto</pre>
+                        <div class="social_network">
+                            <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                            <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
+                            <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
+                            <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
+                        </div> 
+                   </div>
+                </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </body>
+</html>

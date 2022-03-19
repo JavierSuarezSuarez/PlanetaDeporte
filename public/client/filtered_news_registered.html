@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="style/news_style.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/footer_style.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/header_style.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/breadcrumbs_style.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="style/sidebar_style.css" media="screen">
+            <script src="scripts/jquery-3.6.0.min.js"></script>
+            <script src="scripts/script.js"></script>
+            <script src="scripts/data_load.js"></script>
+            <title>Noticias buscadas: Usuario registrado</title> 
+    </head>
+
+    <body>
+        
+        <header class="headers">
+            <nav class="nav_header navbar navbar-expand-lg container-fluid"> 
+                <!---  Mobile -->                       
+                <button type="button" class="navbar-toggler navbar-burguer-btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon navbar-img"></span>
+                </button>
+                <div class="logo_user">
+                    <a class=" logo_link navbar-brand" href="home_registered.html">
+                        <img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+                    </a>
+                    <a href="profile.html" ><img class="header_profile_img_V2" title="Profile" alt="Profile" src="img/profile.png"></a>
+                </div>
+                <!-- PC -->
+                
+                <div class="link_normal navbar-nav">
+                    <a class="logo_link navbar-brand" href="home_registered.html"><img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png"></a>            
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=futbol">Futbol</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=baloncesto">Baloncesto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=tenis">Tenis</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=ciclismo">Ciclismo</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=motor">Motor</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=esports">eSports</a>
+                    <a class="search_link nav-link nav-item" href="filtered_news.html"><img class="img_search" title="glass" alt="glass" src="img/search.png"></a>
+                    <a class="header_links nav-link nav-item" href="contact_registered.html">Contacto</a>
+                </div>
+                <div class="div_user ms-auto">
+                    <a class="login_register_btn navbar-brand" id="btn_login_out" href="https://planetadeporte.herokuapp.com/login">Cerrar Sesi&oacute;n</a>
+                    <a class="profile_link" href="profile.html"><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
+                </div>
+            </nav>
+            <!---  Mobile --> 
+            <nav class="link_mobile navbar-nav navbar-collapse collapse" id="navbarCollapse">
+              <div class="search"></div>
+            </nav>
+        </header>
+
+        <!--PC-->
+        <nav class="breadcrumbs_nav pc_bread">
+            <ul class="breadcrumb breadcrumbs">
+                <li class="breadcrumb_browser"><h2 class="browser_text" href="" >Buscador</h2></li>
+                <li class="breadcrumb_browser"><input class="browser_input" type="text" value="Chiesa"></li>
+            </ul>
+        </nav>
+
+        <!--Mobile & Tablet-->
+        <header class="mobile_bread breadcrumbs_nav">
+            <h2 class="browser_text" href="" >Buscador</h2>
+            <input class="browser_input" type="text" value="Chiesa">
+            <h2 class="browser_title">Buscador:&nbsp;</h2>
+            <p class="search_text"> Chiesa </p>
+            <!-- Tablet & Mobile Dropdown Menu -->
+            <div class="div_dropdown dropdown">
+                <button class="btn_menu btn dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                  Menú
+                </button>
+                <!--Menú lateral-->
+                <div class="mobile_sidebar dropdown-menu">
+                    <a class="mobile_sidebar_list"  href="home_registered.html"><img class="img_icon" title="Home" alt="Home" src="img/home_mobile.png">
+                        Home
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="contain container">
+                <div class="contain_row row">
+    
+                    <!--Menu lateral normal-->
+                    <nav class="sidebar col-sm-2" id="side">
+                        <ul class="nav_list">
+                                <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
+                                    <a class="sidebar_links" href="home_registered.html">Home</a>
+                                </li>
+                        </ul>
+                    </nav>
+            
+                    <div class="sport_panel cuerpo">
+                        <section class="main_new col-sm-10">
+                            <div class="main">
+                                <img id="main_img" class="main_image" title="chiesa" alt="chiesa" src="img/chiesa.jpg">
+                                <a class="news_links" href="new_registered.html?new=3"> 
+                                    <h3 id="main_text" class="news_text">Federico Chiesa, de querar dejarlo a los 13 años a ser la estrella de Italia</h3>
+                                </a>
+                            </div>
+    
+                            <div class="secondary_news">
+                                <div class="secondary_new_container">
+                                    <img id="filtered_secondary_image_1" class="secondary_images" title="vidal" alt="vidal" src="img/vidal.jpg"> 
+                                        <a class="secondary_links" href="new_registered.html?new=5">
+                                            <h5 id="filtered_secondary_text_1" class="news_text sport_sec_text vertical">Sale a la luz un pol&eacute;mico v&iacute;deo de Arturo Vidal 'achispado' de m&aacute;s en su Ferrari</h5>
+                                        </a>
+                                </div>
+                                <!--Para móvil-->
+                                <div class="secondary_new_container secondary_new_mobile"> 
+                                    <img  id="filtered_secondary_image_2" class="secondary_images" title="sr4" alt="sr4" src="img/sr4.jpg">
+                                    <a class="secondary_links" href="new_registered.html?new=1">
+                                        <h5 id="filtered_secondary_text_2" class="news_text sport_sec_text">Pochettino: "Quiz&aacute; la realidad de Sergio Ramos es otra que la de 2014"</h5>
+                                    </a>
+                                </div>                         
+                                <div class="secondary_new_container secondary_new_mobile"> 
+                                    <img id="filtered_secondary_image_3" class="secondary_images" title="xavi" alt="xavi" src="img/xavi.jpg">
+                                    <a class="secondary_links" href="new_registered.html?new=4">
+                                        <h5 id="filtered_secondary_text_3" class="news_text sport_sec_text">La primera arenga</h5>
+                                    </a>
+                                </div> 
+                                <div class="secondary_new_container secondary_new_mobile"> 
+                                    <img id="filtered_secondary_image_4" class="secondary_images" title="quique" alt="quique" src="img/quique.jpg">
+                                    <a class="secondary_links" href="new_registered.html?new=2">
+                                        <h5 id="filtered_secondary_text_4" class="news_text sport_sec_text">Quique Sánchez Flores: "Michel es mi amigo, hablé con él y nos deseamos lo mejor"</h5>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </section>
+                        
+                        <aside class="aside_news col-sm-2">
+                            <div class="aside_new">
+                                <img id="aside1_img" class="aside_images" title="xavi" alt="xavi" src="img/xavi.jpg"/>                        
+                                <a class="news_links" href="new_registered.html?new=4">
+                                    <h6 id="aside1_text" class="news_text">La primera arenga</h6>
+                                </a>
+                            </div>
+                            <div class="aside_new">
+                                <img id="aside2_img" class="aside_images" title="sr4" alt="sr4" src="img/sr4.jpg">
+                                <a class="news_links" href="new_registered.html?new=1">
+                                    <h6 id="aside2_text" class="news_text">Pochettino: "Quiz&aacute; la realidad de Sergio Ramos es otra que la de 2014"</h6>
+                                </a>
+                            </div>
+                            <div class="aside_new">
+                                <img id="aside3_img" class="aside_images" title="quique" alt="quique" src="img/quique.jpg">
+                                <a class="news_links" href="new_registered.html?new=2">
+                                    <h6 id="aside3_text" class="news_text">Quique S&aacute;nchez Flores: "Michel es mi amigo, le deseo lo mejor"</h6>
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    
+        <footer class="footers">
+            <div class="content container">
+                <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;n Deportiva, S.L.U. Todos los derechos reservados.</pre>
+                <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Contacto</pre>
+                <div class="social_network">
+                    <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                    <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
+                    <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
+                    <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
+                </div> 
+           </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

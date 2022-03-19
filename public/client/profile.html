@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Perfil</title>
+        <link rel="stylesheet" text="text/css" href="style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/header_style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/footer_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/breadcrumbs_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/sidebar_style.css"/>
+        <script src="scripts/jquery-3.6.0.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/data_load.js"></script>
+
+    </head>
+    <body>
+        <header class="headers">
+            <nav class="nav_header navbar navbar-expand-lg container-fluid">                       
+                <button type="button" class="navbar-toggler navbar-burguer-btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon navbar-img"></span>
+                </button>
+                <div class="logo_user">
+                    <a class=" logo_link navbar-brand" href="home_registered.html">
+                        <img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+                    </a>
+                    <a href="profile.html" ><img class="header_profile_img_V2" title="Profile" alt="Profile" src="img/profile.png"></a>
+                </div>
+                <div class="link_normal navbar-nav">
+                    <a class="logo_link navbar-brand" href="home_registered.html"><img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png"></a>            
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=futbol">Futbol</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=baloncesto">Baloncesto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=tenis">Tenis</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=ciclismo">Ciclismo</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=motor">Motor</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=esports">eSports</a>
+                    <a class="header_links nav-link nav-item" href="contact_registered.html">Contacto</a>
+                </div>
+                <div class="div_user ms-auto">
+                    <a class="login_register_btn navbar-brand" id="btn_login_out"href="https://planetadeporte.herokuapp.com/login">Cerrar Sesi&oacute;n</a>
+                    <a class="profile_link" href="profile.html"><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
+                </div>
+            </nav>
+            <nav class="link_mobile navbar-nav navbar-collapse collapse" id="navbarCollapse">
+              <div class="search"></div>
+            </nav>
+        </header>
+        <header class="mobile_bread breadcrumbs_nav">
+            <h2 class="sub_headers_title">Perfil</h2>
+            <div class="div_dropdown dropdown">
+                <button class="btn_menu btn dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                  Menú
+                </button>
+                <div class="mobile_sidebar dropdown-menu">
+                    <div class="mobile_sidebar_list "><img class="img_icon" title="Home" alt="Home" src="img/home_mobile.png">
+                        <a class="sidebar_link dropdown-item" href="home_registered.html">Home</a>
+                        <img id= "mobile_panel_img" class="img_icon" title="Panel" alt="Panel" src="img/panel_mobile.png">
+                        <a id= "mobile_panel_link" class="sidebar_link dropdown-item" href="admin_content_panel.html">Panel</a>
+                    </div>
+            </div>
+            </div>
+        </header>
+        <section>
+            <div class="contain container">
+                <div class="contain_row row">
+                    <nav class="sidebar col-sm-2" id="side">
+                        <ul class="nav_list">
+                            <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
+                                <a class="sidebar_links" href="home_registered.html">Home</a>
+                            </li>
+                            <li id= "pc_tablet_panel_img" class="nav_items"><img class="sidebar_logos" title="Panel" alt="Panel" src="img/panel.png">
+                                <a id= "pc_tablet_panel_link" class="sidebar_links" href="admin_content_panel.html">Panel</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="section_profile cuerpo content_form col-sm-10">
+                        <div class="contain_row row">
+                            <div class ="photo_profile col-sm-4">
+                                <img class="profile_img change_photo" title="Profile" alt="Profile" src="img/changephoto.png"><br/>
+                                <button class="btn_change_img" name="change_photo" type="button">
+                                    <img class="change_img align-middle"src="img/changeImage.png"/>
+                                    <span class="align-middle">Cambiar&nbsp;Foto</span>
+                                </button>
+                            </div>
+                            <form id="edit_profile" class="col-sm-8" method="POST">
+                                <div class="mb-1 row">
+                                    <label for="name_profile" class="label_title col-sm-2 form-label">Nombre:</label>
+                                </div>
+                                <div class="mb-1 row">
+                                    <input class="input_text col-sm-4" id="name_profile" type="text"
+                                        pattern="[A-Za-z&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ntilde;&Ntilde;\s]{1,}"
+                                        placeholder="Nombre"required/>
+                                        <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Edit" src="img/edit.png"></button>
+                                        <button class="button_ok" type="button"><img title="ok" alt="Panel" src="img/ok.png"></button>
+                                </div>
+                                <div class="mb-1 row">
+                                    <label for="last_name_profile" class="label_title col-sm-2 form-label">Apellidos:</label>
+                                </div>
+                                <div class="mb-1 row">
+                                    <input class="input_text col-sm-4" id="last_name_profile" type="text" 
+                                        pattern="[A-Za-z&aacute;&eacute;&iacute;&oacute;&uacute;&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;&ntilde;&Ntilde;\s]{1,}" 
+                                        placeholder="Apellidos"required/>
+                                    <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Panel" src="img/edit.png"></button>
+                                    <button class="button_ok" type="button"><img class="edit_delete" title="ok" alt="Panel" src="img/ok.png"></button>
+                                </div>
+                                <div class="mb-1 row">
+                                    <label for="email_profile" class="label_title col-sm-2 form-label">E-mail:</label>
+                                </div>
+                                <div class="mb-1 row">
+                                    <input type="email" class="input_text col-sm-4" id="email_profile" placeholder="name@example.com" required>
+                                    <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Panel" src="img/edit.png"></button>
+                                    <button class="button_ok" type="button"><img class="edit_delete" title="ok" alt="Panel" src="img/ok.png"></button>
+                                </div>
+                                <div class="mb-1 row">
+                                    <label for="password_profile" class="label_title col-sm-2 form-label">Contrase&ntilde;a:</label>
+                                </div>
+                                <div class="mb-1 row">
+                                    <input type="password" class="input_text col-sm-4 form-control" id="password_profile"placeholder="Cambiar contrase&ntilde;a" required>
+                                    <button class="button_edit" type="button"><img class="edit_delete" title="Edit" alt="Panel" src="img/edit.png"></button>
+                                    <button class="button_ok" type="button"><img class="edit_delete" title="ok" alt="Panel" src="img/ok.png"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <footer class="footers">
+            <div class="content container">
+                <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;n Deportiva, S.L.U. Todos los derechos reservados.</pre>
+                <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Contacto</pre>
+                <div class="social_network">
+                    <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                    <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
+                    <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
+                    <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
+                </div> 
+           </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

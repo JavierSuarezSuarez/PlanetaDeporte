@@ -1,0 +1,435 @@
+/*------------------------------------Sport_section----------------------*/
+/*Cuerpo sport section */
+.sport_panel{
+    padding-bottom: 11%;
+    position: relative;
+    width: 90.3%;
+}
+
+/* Noticias (Etiqueta section) sport section*/
+.main_new{ 
+    padding: 1%;
+    width: 70%;
+    float: left;
+}
+
+/*Noticia principal*/
+.main{
+    width: 100%;
+}
+
+/*Imagen principal*/
+.main_image{
+    display: block;
+    margin: auto;
+}
+/*Título de la noticia (news_text) y tema de la noticia (sport_text)*/
+.news_text, .sport_text{
+    padding: 1% 4%;
+}
+
+/*Etiqueta a titulo de la noticia (normal y secundaria)*/
+.news_links, .secondary_links{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+/*Etiqueta a titulo de la noticia secundaria*/
+.secondary_links {
+    width:65%;
+    float: right;
+    text-align: start;
+}
+
+/*Noticias secundarias*/
+.secondary_new_container{
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+/*Noticias secundarias extrar para móvil*/
+.secondary_new_mobile{
+    display: none;
+}
+
+/*Etiqueta aside*/
+.aside_news{
+    width: 30%;
+    float: right;
+    padding: 1%;
+}
+/*Cada notica (imagen y título)*/
+.aside_new{
+    padding: 2% 0%;
+}
+
+/*Imagenes aside*/
+.aside_images{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width:50%;
+}
+/*Tema de la noticia*/
+.sport_text{
+    display: none;
+}
+
+
+.secondary_images{
+    width: 35%;
+}
+
+
+/*Contenedor página noticia*/
+.new_panel{
+    width: 95%;
+}
+
+.new_image{
+    display: block;
+    margin: auto;
+    width:87%;
+}    
+
+.author_image{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.main_new_section {
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+
+.author_text_section{
+    float: left;
+    width: 75%;
+}
+
+.author_photo_section{
+    float:left;
+    width: 25%;
+    padding-top: 2.7%;
+}
+
+.section_header{
+    text-align: left;
+}
+
+
+.recommendation_new_section_1{
+    float: left;
+    width: 33%;
+}
+
+.recommendation_new_section_2{
+    float: left;
+    width: 33%;
+}
+.recommendation_new_section_3{
+    float: right;
+    width: 34%;
+}
+
+.recommendations, .author_biography, .comments, .comment_section{
+    border-top: 2px solid black;
+    display: inline-block;
+}
+
+.comment_section{
+    border-top: 1px solid black;
+}
+
+.commentator_photo_section{
+    float: left;
+    width: 20%;
+    margin-top: 0.5%;    
+}
+
+.commentator_photo{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+.comment_section, .comments{
+    display: block;
+    margin-top: 2%;
+}
+
+.commentator_text{
+    text-align: left;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.add_comment_button{
+    display: block;
+    margin: auto;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    background-color: #066397;
+    color: #FFFFFF;
+    padding: 0.9% 0.5%;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.cancel_comment_button{
+    display: block;
+    margin: auto;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    background-color: #cc0f01;
+    color: #FFFFFF;
+    padding: 0.9% 0.5%;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.add_comment_txt{
+    margin-left: 16%;
+
+}
+
+.biography_text{
+    font-family:cursive
+}
+
+.new_subtitle{
+    color: rgb(141, 141, 141);
+}
+
+h1, h2, h3, h4, pre{
+    text-align: center;
+}
+
+/*Media Query para PC*/
+@media only screen and (min-width:992px) {
+/*------------------------------------Sport_section----------------------*/
+    /* Noticias (Etiqueta section) sport section*/
+    .main_new{
+        padding-left: 0%;
+    }
+    /*Imagen principal*/
+    .main_image{
+        width: 100%;
+        height: 330px;
+    }
+
+    /*Header de la noticia secundaria*/
+    .secondary_new_text_PC{
+        margin-top: -11%;
+        width: 50%;
+    }
+
+    /*Noticias secundarias aside*/
+    #secondary_image_1{
+        width: 70%;
+    }
+
+    .aside_images{
+        width: 100%;
+    }
+
+    /*Contenedor página noticia*/
+    .new_panel{
+        width: 90%;
+    }
+
+    .main_new_section {
+        padding-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    .new_image{
+        display: block;
+        margin: auto;
+        width:100%;
+    }
+    
+    .author_text_section{
+        float: left;
+        width: 75%;
+        margin-top: 1%;
+    }
+
+    .recommendation_images{
+        width:90%;
+        display:block;
+        margin:auto;
+    }
+
+    .recommendation_text{
+        width: 95%;
+        margin-left: 5%;
+        padding-top: 2%;
+    }
+
+    .new_date{
+        width: 105%;
+    }
+}
+
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*------------------------------------Sport_section----------------------*/
+    /*Cuerpo del sport section*/
+    .sport_panel{
+        width: 100%;
+    }
+    /*Imagen de la noticia principal*/
+    .main_image{
+        width: 100%;
+        height: 67%;
+    }
+    /*Etiqueta h5 de la noticia secundaria*/
+    #sport_sec_text{
+        padding-top: 26%;
+    }
+    /*Imágenes del aside*/
+    .aside_images{
+        width: 53%;
+        display: block;
+        margin: auto;
+    }
+
+    .new_frame{
+        margin-left: 3%;
+    }
+
+    .new_image{
+        display: block;
+        margin: auto;
+        width:100%;
+    }
+
+    .recommendation_new_section_1{
+        float: left;
+        width: 50%;
+    }
+
+    .recommendation_new_section_2{
+        float: right;
+        width: 50%;
+    }
+    .recommendation_new_section_3{
+        display: none;
+    }
+
+    .recommendation_text{
+        width: 95%;
+        margin-left: 5%;
+        padding-top: 2%;
+    }
+
+    .recommendation_images{
+        width:94%;
+        display:block;
+        margin:auto;
+    }
+
+    .new_date{
+        width: 102%;
+    }
+
+}
+
+/*Media Query para Móvil*/
+@media only screen and (max-width: 767px) {
+/*------------------------------------Sport_section----------------------*/
+    /*Ocultar aside */
+    .aside_news{
+        display: none;
+    }
+    /*Mostrar noticias secundarias extras*/
+    .secondary_new_mobile {
+        display: flex;
+    }
+    /*Cuerpo del sport section y Noticias (Etiqueta section) sport section*/
+    .sport_panel, .main_new{
+        width: 100%;
+    }
+
+    /*Etiqueta a titulo de la noticia sport section*/
+    .news_links{
+        text-decoration: none;
+        color: black;
+        width: 68%;
+        margin-left: 15%;
+        margin-top: 2%;
+        display: block;
+    }
+    /*Cuadro de las noticias secundarias*/
+    .secondary_news{
+        background: rgba(0, 0, 0, .1);
+        padding: 3% 2%;
+    }
+    /*Noticias secundarias*/
+    .secondary_new_container{
+        border-radius: 3px;
+        background: white;
+        margin: 3% 4%;
+        border-top: 2px solid black;
+    }
+    /*Tema de la noticia en versión móvil*/
+    .sport_text{
+        color:dimgray;
+        font-family: cursive;
+        display: block;
+        margin: 0%;
+    }
+    
+    .main_image{
+        width: 100%;
+    }
+
+    
+    /*-------------------------------------------------------------------------------- New style ------------------------------------------------------------------------*/
+    .new_frame{
+        margin-left: 4%;
+    }
+
+    .new_image{
+        display: block;
+        margin: auto;
+        width:100%;
+    }
+
+    .recommendation_new_section_1{
+        float: left;
+        width: 50%;
+    }
+    
+    .recommendation_new_section_2{
+        float: right;
+        width: 50%;
+    }
+
+    .recommendation_new_section_3{
+        display: none;
+    }
+       
+    .recommendation_text{
+        width: 130%;
+        margin-left: -13%;
+        padding-top: 2%;
+    }
+
+    .recommendation_images{
+        width:87%;
+        display:block;
+        margin:auto;
+    }
+
+    .new_date{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,297 @@
+/*-------------------------------------------------------------------------Header Styles-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------Admin Header---------------------------------------------------------------------*/
+/*Header principal con el fondo azul*/
+.nav_header {
+    padding: 2%;
+} 
+/*Menu hamburguesa e imagen perfil de movil*/
+.navbar-burguer-btn, .header_profile_img_V2, .link_mobile, .logo_user {
+    display: none;
+}
+/*Imagen del logo*/
+.img_logo {
+    float: left;
+    margin-left: 5%;
+}
+/*Enlaces del header*/
+.header_links, .header_links a{
+    margin-left: 1%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
+/*Botón del buscador*/
+.search_link{
+    width: 5%;
+    margin-left: 0%;
+    margin-right: -1%;
+}
+/* Usuario: Identificación y Icono de perfil */
+.div_user {
+    float: right;
+    width: 25%;
+    display: inline;
+}
+/* Botón Text: PEPE MORENO PÉREZ */
+.header_profile_text {
+    background: #066397;
+    box-shadow: 0px 16px 24px rgba(54, 123, 245, 0.2);
+    border-radius: 99px;
+    font-family: Mulish;
+    color: #FFFFFF;
+    font-style: normal;
+    text-transform: uppercase;
+    padding: 3.5%;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+/*Botón*/
+.profile_link{
+    display: contents;
+}
+/* Imagen Perfil*/
+.header_profile_img, .header_profile_img_V2 {
+    width: 15%;
+    border-radius: 619%;
+    margin-left: 4%;
+    margin-top: 1%;
+    float: right;
+}
+/*-----------------Registered User Header----------------*/
+/* DUDA puede que haga falta esta regla*/
+.nav_register_header{
+    padding: 2%;
+    margin-top: 0.1%;
+}
+/* DUDA puede que haga falta esta regla*/
+.register_header_links, .register_header_links a {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150%;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-decoration:none;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+/*Botón Buscador*/
+.register_header_links a img {
+    width: 2%;
+}
+/*Recuadro de los botones (Iniciar Sesión y Registrarse)*/
+.div_btns {
+    width: 20%;
+    float: right;
+    padding: 0.5%;
+    margin-right: 1%;
+    margin-top: -0.5%;
+}
+/* Btn texts Background Cerrar Sesión, iniciar sesión y registrarse */
+.actions_btn_bg, .login_register_btn{
+    background: #5D5FEF;
+    box-shadow: 0px 16px 24px rgba(54, 123, 245, 0.2);
+    border-radius: 99px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    font-size: 55%;
+    padding: 1%;
+    margin-right: 2%;
+    margin-left: 1%;
+}
+/*Botón de cerrar sesión*/
+#btn_login_out{
+    margin-left: 30%;
+    margin-top: 4%;
+}
+/*Botón de registrarse*/
+.sign_btn{
+    float: right;
+}
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+@media only screen and (min-width:992px) {
+    /* Etiqueta Header */
+    .headers {
+        background: #008CF2;
+        padding-top: 1%;
+    }
+    /*Enlaces del header y su etiqueta a*/
+    .header_links, .header_links a{
+        display: inline;
+        font-size: 18px;
+        line-height: 110%;
+        color: #FFFFFF;
+        text-decoration:none;
+        margin-top: 3%;
+    }
+    /*Botón del buscador*/
+    .search_link{
+        margin-right: 0%;
+    }
+    /*Imagen del buscador*/
+    .img_search {
+        height: 50%;
+        margin-top: 50%;
+    }
+    /* Botón Text: PEPE MORENO PÉREZ */
+    .header_profile_text {
+        font-size: 60%;
+        line-height: 125%;
+    }
+    /*Botón de (Iniciar Sesión o Registrarse)*/
+    .login_register_btn{
+        padding: 3% 5%;
+    }
+    /*Botón de Iniciar Sesión*/
+    .login_btn{
+        margin-left: 19%; 
+    }
+}
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Etiqueta Header */
+    .headers {
+        background: #008CF2;
+        padding-top: 1%;
+    }
+    /*link del header general (Logo y secciones)*/
+    .link_normal {
+        display: contents;
+    }
+    /*Logo (general: etiqueta a + img)*/
+    .logo_link{
+        margin-right: 0%;
+        float: right;
+    }
+    /*Logo*/
+    .img_logo{
+        width: 80%;
+    }
+    /*Enlaces del header y su etiqueta a*/
+    .header_links, .header_links a{
+        display: inline;
+        font-size: 16px;
+        line-height: 90%;
+        color: #FFFFFF;
+        text-decoration:none;
+        margin-top: 1%;
+        margin-left:1%;
+    }
+    /*Imagen del buscador*/
+    .img_search{
+        width: 70%;
+        margin-left: 10%;
+    }
+     /* Botón Text: PEPE MORENO PÉREZ */
+    .header_profile_text {
+        font-size: 40%;
+    }
+    /*Botón de (Iniciar Sesión o Registrarse o Cerrar Sesión)*/
+    .login_register_btn{
+        padding: 3.5% 4%;
+    } 
+    /*Botón de Iniciar Sesión*/
+    .login_btn{
+        margin-left: 5%; 
+    }
+}
+/*Media Query para Movil*/
+@media only screen and (max-width: 767px) {
+    /*Ocultar elementos*/
+    .div_user, .header_profile_img, .link_normal, .header_logo {
+        display: none;
+    }
+    /*Mostrar elementos*/
+    .navbar-burguer-btn, .header_profile_img_V2, .link_mobile, .logo_user {
+        visibility:visible;
+        display: block;
+    }
+    /*Header principal con el fondo azul*/
+    .nav_header{
+        background: #008CF2;
+    }
+    /*Icono hamburguesa*/
+    .navbar-burguer-btn {
+        background-color: #E5E5E5;
+        border-radius: 15px;
+    }
+    /*Imagen de burguer*/
+    .navbar-img {
+        background-image: url("../img/burguer.png");
+    }
+    /*Menu desplegable del botón hamburguersa*/
+    .link_mobile{
+        background-color: lightskyblue;
+        padding-left: 2%;
+        width: 30%;
+        text-align: left;
+        position: absolute;
+        z-index: 1;
+    }
+    /*Enlaces del header y su etiqueta a*/
+    .header_links, .header_links a{
+        color: darkblue;
+        border-top: 1px solid #1e7cbe;
+        border-bottom: 1px solid #1e7cbe;
+        margin-left: 1%;
+    }
+    /*Buscador genera DIV*/
+    .search{        
+        display: inline-block;
+        margin: 5% 0.5% 1% 0.5%;
+        width: 90%;
+        border-radius: 3px;
+        border: 2px solid #1e7cbe;
+    }
+    /*Input del buscador*/
+    .input_search, .input_search:active{
+        border: none;
+        float: left;
+        background-color: #fff;
+        width: 85%;
+        margin-right: 0%;
+        border-right: #1e7cbe;
+        height: 20px;
+    }
+    /*Botón del buscador*/
+    .button_search, .button_search:active{
+        background-color: #1e7cbe;
+        float:right;
+        width: 15%;
+        border:none;
+        height: 20px;
+    }
+    /*Imagen del buscador*/
+    .img_search{
+        display: block;
+        width: 100%;
+    }
+    /*Recuadro: Imagen logo y Botón (Iniciar sesión o Avatar del perfil)*/
+    .logo_user {
+        width: 55%;
+        margin-right: 1%;
+    }
+    /*Logo en móvil*/
+    .logo_link {
+        display: contents;
+        align-items: center;
+        float: left;
+    } 
+    /*Avatar del perfil y botón iniciar sesión*/
+    .header_profile_img_V2, .login_mobile {
+        float: right;
+        margin-top: 2.5%;
+    }
+    /*Botón de iniciar sesión*/
+    .login_mobile{
+        margin-top: 8%;
+        padding: 2%;
+    }  
+}

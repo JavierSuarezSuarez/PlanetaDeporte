@@ -1,0 +1,114 @@
+
+
+.div_content_panel_new {
+    float: left;
+    text-align: center;
+}
+
+
+.img_content_panel_new {
+    width: 50%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+
+.text_content_panel_new {
+    color: #066397;
+    font-size: large;
+    text-align: center;
+}
+
+.edit_remove_btns {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.button_edit {
+    padding: 1%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color:#066397;
+    border: none;
+    border-radius: 50%;
+  }
+.button_delete {
+    padding: 1%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+}
+.edit_delete{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+/*Media Query para PC */
+@media only screen and (min-width:992px) {
+
+    .content_wrap_section {
+        width: 85.5%;
+        padding: 0%;
+    }
+
+    .content_section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    } 
+
+
+    .button_edit {
+        padding: 1.2%;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: #066397;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .button_delete {
+        padding: 1.2%;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: red;
+        border: none;
+        border-radius: 50%;
+    }
+
+}
+
+
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content_section {
+        display: grid;
+        grid-template-columns: auto auto;
+    } 
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+
+/*Media Query para Movil*/
+@media only screen and (max-width: 767px) {
+    .content_section {
+        display: grid;
+        grid-template-columns: auto;
+    } 
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

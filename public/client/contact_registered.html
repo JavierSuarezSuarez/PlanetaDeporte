@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+        <title>Contacto</title>
+        <link rel="stylesheet" text="text/css" href="style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/header_style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/footer_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/breadcrumbs_style.css"/>
+        <link rel="stylesheet" type="text/css" href ="style/sidebar_style.css"/>
+        <script src="scripts/jquery-3.6.0.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/data_load.js"></script>
+    </head>
+    <body>
+        <header class="headers">
+            <nav class="nav_header navbar navbar-expand-lg container-fluid">                   
+                <button type="button" class="navbar-toggler navbar-burguer-btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon navbar-img"></span>
+                </button>
+                <div class="logo_user">
+                    <a class=" logo_link navbar-brand" href="home_registered.html">
+                        <img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png">
+                    </a>
+                    <a href="profile.html" ><img class="header_profile_img_V2" title="Profile" alt="Profile" src="img/profile.png"></a>
+                </div>
+                <div class="link_normal navbar-nav">
+                    <a class="logo_link navbar-brand" href="home_registered.html"><img class="img_logo" title="Company Logo" alt="Company Logo" src="img/logo.png"></a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=futbol">Futbol</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=baloncesto">Baloncesto</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=tenis">Tenis</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=ciclismo">Ciclismo</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=motor">Motor</a>
+                    <a class="header_links nav-link nav-item" href="sport_section_registered.html?section=esports">eSports</a>
+                    <a class="header_links nav-link nav-item" href="contact_registered.html">Contacto</a>
+                </div>
+                <div class="div_user ms-auto">
+                    <a class="header_profile_text btn btn-sm" href="profile.html">Pepe Moreno P&eacute;rez</a>
+                    <a class="profile_link" href="profile.html"><img class="header_profile_img" title="Profile" alt="Profile" src="img/profile.png"></a>
+                </div>
+            </nav>
+            <nav class="link_mobile navbar-nav navbar-collapse collapse" id="navbarCollapse">
+                <div class="search"></div>
+            </nav>
+        </header>
+        <nav class="breadcrumbs_nav pc_bread">
+            <ul class="breadcrumb breadcrumbs">
+                <li class="breadcrumbs_list_items breadcrumb-item">
+                    <a class="breadcrumbs_links" href="home_registered.html">Home</a>
+                </li>
+                <li class="breadcrumbs_list_items breadcrumb-item">
+                    <a class="breadcrumbs_links" href="contact_registered.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="mobile_bread breadcrumbs_nav">
+            <h2 class="sub_headers_title">Contacto</h2>
+            <div class="div_dropdown dropdown">
+                <button class="btn_menu btn dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                  Menú
+                </button>
+                <div class="mobile_sidebar dropdown-menu">
+                    <div class="mobile_sidebar_list "><img class="img_icon" title="Home" alt="Home" src="img/home_mobile.png">
+                        <a class="sidebar_link dropdown-item" href="home_registered.html">Home</a>
+                    </div>    
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="contain container"> 
+                <div class="contain_row row">
+                    <nav class="sidebar col-sm-2" id="side">
+                        <ul class="nav_list">
+                            <li class="nav_items"><img class="sidebar_logos" title="Home" alt="Home" src="img/home.png">
+                                <a class="sidebar_links" href="home_registered.html">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="body_contact cuerpo col-sm">
+                        <h1>Cont&aacute;ctanos</h1>
+                        <div class="social">
+                            <p>Si tienes cualquier duda o informaci&oacute;n que quieras compartir, puedes escribirnos a trav&eacute;s de nuestras
+                        redes sociales:</p>
+                            <ul class ="social_contact">
+                                <li ><img title="Logo_Twitter" alt="Twitter" src="img/twitter.png"/>Perfil de Twitter: <a href="#">@PlanetaDeporte</a></li>
+                                <li><img title="Logo_Facebook" alt="Facebook" src="img/facebook.png"/>Perfil de Facebook: <a href="#">facebook.com/planeta_deporte</a></li>
+                                <li><img title="Logo_Instagram" alt="Instagram" src="img/instagram.png"/>Perfil de Instagram: <a href="#">Planeta_Deporte</a></li>
+                                <li><img title="Logo_YouTube" alt="Youtube" src="img/youtube.png"/>Canal de Youtube: <a href="#">@PlanetaDeporte</a></li>
+                            </ul>
+                            <p> Tambi&eacute;n puedes contactarnos rellenando el siguiente formulario:
+                        </div>
+                        <form class="contact" method="POST">
+                            <div class="mb-3 row">
+                                <label for="name" class="text_form col-sm-4">Nombre&nbsp;Completo:</label>
+                                <input class="input_contact col-sm-4" id="name" type="text" placeholder="Nombre Completo"required/>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="email" class="text_form col-sm-2 form-label">E-mail:</label>
+                                <input type="email" class="input_contact col-sm-4" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="asunt" class="text_form col-sm-2 form-label">Asunto:</label>
+                                <input type="text" class="textarea_contact col-sm-4 form-control" id="asunt" placeholder="Asunto">
+                            </div>
+                            <div class="mb-5 row">
+                                <label for="content_textarea" class="text_form col-sm-2 form-label">Descripci&oacute;n:</label>
+                                <textarea class="textarea_contact col-sm-11 form-control" id="content_textarea" rows="10" placeholder="Descripci&oacute;n..."></textarea>
+                            </div>
+                            <button class="button_send btn" type="submit"> <img class ="send_img" src="img/send.png" alt="send"/>Enviar</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <footer class="footers">
+            <div class="content container">
+                <pre class="rights_text">Septiembre 2021 Unidad Editorial Informaci&oacute;n Deportiva, S.L.U. Todos los derechos reservados.</pre>
+                <pre class="terms_text">T&eacute;rminos y condiciones de uso      Pol&iacute;tica de privacidad       Pol&iacute;tica de cookies        Contacto</pre>
+                <div class="social_network">
+                    <img class="FB_logo" title="Facebook Logo" alt="Facebook Logo" src="img/facebook.png">
+                    <img class="IG_logo" title="Instagram Logo" alt="Instagram Logo" src="img/instagram.png">
+                    <img class="TW_logo" title="Twitter Logo" alt="Twitter Logo" src="img/twitter.png">
+                    <img class="YT_logo" title="Youtube Logo" alt="Youtube Logo" src="img/youtube.png">
+                </div> 
+           </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

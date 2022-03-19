@@ -1,0 +1,149 @@
+/*Ocultar versión móvil y tablet*/
+.mobile_bread, .new_breadcrumb {
+    display: none;
+} 
+/*Breadcrumbs general*/
+.breadcrumbs_nav, .sub_headers {
+    background: #3F3F3F;
+    padding: 0.2%;
+}
+/*Etiqueta ul*/
+.breadcrumbs {
+    margin: 0.4%;
+}
+/*Links de cada uno (etiqueta a) y Nombre de la página(Tablet y Móvil)*/
+.breadcrumbs_links, .sub_headers_title, .new_breadcrumb, .sub_header_mobile{
+    color: white;
+    font-family: cursive;
+}
+/*Tablet y Móvil: Nombre de la página, Nombre del buscador y palabras del buscador*/
+.sub_headers_title, .browser_title, .search_text, .new_breadcrumb{
+    padding-top: 0.5%;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+}
+/*Tablet y Móvil: Nombre de la página*/
+.sub_headers_title, .sub_header_mobile {
+    display: inline-block;
+    font-size: medium;
+}
+
+/*Input del buscador*/
+.browser_input {
+    background: #C4C4C4;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0.4% 5% 0.4% 5%; 
+    color: black;  
+}
+/*Tablet y Móvil: Nombre de la pagina(Buscador)*/
+.browser_title, .browser_text {
+    display: inline-block;
+    color: white;
+    margin-bottom: 0%;
+}
+/*Tablet y Móvil: palabras del buscador(Buscador)*/
+.search_text, .browser_input {
+    display: inline-block;
+    color: white;
+    font-size: small;
+    font-style: italic;
+    margin-bottom: 0%;
+}
+/*Tablet y Móvil: Botón Menu (Etiqueta div)*/
+.div_dropdown {
+    float: right;
+    margin-right: 1%;
+}
+/*Tablet y Móvil: Botón menú*/
+.btn_menu, .btn_menu:active, .btn_menu:hover, .btn_menu:focus, .btn_menu:focus+.btn_menu{
+    color: white;
+    font-size: 12px;
+    border:none;
+    box-shadow: none;
+}
+/*Tablet y Móvil: Botón menú*/
+.btn_menu:focus {
+    border-radius: 3px;
+    background: #6f6f6f;
+}
+/*###################################################################### MEDIA QUERIES #############################################################################################*/
+/*Media Query para PC*/
+@media only screen and (min-width:992px) {
+    /*Icono que se repite*/
+    .breadcrumbs_list_items+.breadcrumbs_list_items::before{
+        content:url("../img/beak.png");
+        margin-top: 3%;
+        float: none;
+    }
+    /*Etiqueta li (Normal y Buscador)*/
+    .breadcrumbs_list_items, .breadcrumb_browser {
+        display: inline;
+    }
+    /* Etiqueta li (Buscador)*/
+    .breadcrumb_browser{
+        margin-left: 2%;
+    }
+    /*Links de cada uni (etiqueta a*/
+    .breadcrumbs_links{
+        text-decoration: none;
+    }
+    /*Links de cada uni (etiqueta a) y Nombre: Buscador */
+    .breadcrumbs_links, .browser_text{
+        font-size: large;
+    }
+    .input_brdc_pc {
+        border: none;
+        background: none;
+    }
+}
+/*Media Query para Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*Ocultar versión PC*/
+    .pc_bread, .sub_headers, .browser_title, .search_text{
+        display: none;
+    }
+    /*Nombre del título de la noticia*/
+    .new_breadcrumb{
+        display: inline-block;
+        border: none;
+        background: none;
+        font-size: medium;
+        margin-left: 0.1%;
+    }
+    /*Mostrar versión*/
+    .mobile_bread {
+        display: block;
+        padding: 1.5% 0%;
+    }
+    /*Tablet y Móvil: Nombre de la pagina(Buscador)*/
+    .browser_text, .browser_input{
+        font-size: medium;
+        margin-left: 1%;
+    }
+
+}
+/*Media Query para Movil*/
+@media only screen and (max-width: 767px) {
+    /*Ocultar versión PC*/
+    .pc_bread,.sub_headers, .sub_header_mobile, .browser_input, .browser_text {
+        display: none;
+    }
+    /*Mostrar versión*/
+    .mobile_bread{
+        display: block;
+        padding: 1.5% 0%;
+    }
+    /*Tablet y Móvil: Nombre de la pagina(Buscador)*/
+    .browser_title,.search_text {
+        font-size: small;
+    }
+    /*Nombre del título de la noticia*/
+    .new_breadcrumb{
+        display: inline-block;
+        border: none;
+        background: none;
+        font-size: medium;
+        margin-left: 0.1%;
+    }
+}
